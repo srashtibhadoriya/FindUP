@@ -1,9 +1,12 @@
 import React from 'react'
 import LoginPage from './Pages/LoginPage/LoginPage'
-import LandingPage from './Pages/Landig page/LandingPage'
+import ProfileFeed from './Pages/FeedPages/Feedpage'
+import Discover from './Pages/DiscoverPeopl/Discover'
 const App = () => {
   return (
-    <LoginPage />
+    // <Discover />
+    <ProfileFeed />
+    // <LoginPage />
     // <LandingPage />
   )
 }
