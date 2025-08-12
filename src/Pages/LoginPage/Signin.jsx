@@ -9,9 +9,9 @@
      console.log({ email, password });
    }
    return (
- <div className="bg-[#1B3C53] p-8 rounded-xl shadow-md w-full md:w-full ">
-          <h2 className="text-xl font-semibold mb-4 text-white">Sign in to</h2>
-          <p className="text-sm text-gray-300 mb-6">Welcome back! Please sign in to continue.</p>
+ <div className="bg-white p-8 rounded-xl shadow-md w-full md:w-full ">
+          <h2 className="text-xl font-bold mb- text-[#1B3C53]">Sign in to</h2>
+          <p className="text-sm text-[#1c4b6c] mb-6">Welcome back! Please sign in to continue.</p>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
