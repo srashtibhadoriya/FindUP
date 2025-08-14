@@ -18,6 +18,70 @@ const peopleData = [
     isFollowing: true,
   },
   {
+    name: 'John Warren',
+    username: '@john_warren',
+    location: 'New York, NY',
+    whishlisted: 2,
+    avatar: 'https://randomuser.me/api/portraits/men/10.jpg',
+    isFollowing: false,
+  },
+  {
+    name: 'Richard Hendricks',
+    username: '@Richard_Hendricks',
+    location: 'New York, NY',
+    whishlisted: 2,
+    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    isFollowing: true,
+  },
+  {
+    name: 'John Warren',
+    username: '@john_warren',
+    location: 'New York, NY',
+    whishlisted: 2,
+    avatar: 'https://randomuser.me/api/portraits/men/10.jpg',
+    isFollowing: false,
+  },
+  {
+    name: 'Richard Hendricks',
+    username: '@Richard_Hendricks',
+    location: 'New York, NY',
+    whishlisted: 2,
+    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    isFollowing: true,
+  },
+  {
+    name: 'John Warren',
+    username: '@john_warren',
+    location: 'New York, NY',
+    whishlisted: 2,
+    avatar: 'https://randomuser.me/api/portraits/men/10.jpg',
+    isFollowing: false,
+  },
+  {
+    name: 'Richard Hendricks',
+    username: '@Richard_Hendricks',
+    location: 'New York, NY',
+    whishlisted: 2,
+    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    isFollowing: true,
+  },
+  {
+    name: 'John Warren',
+    username: '@john_warren',
+    location: 'New York, NY',
+    whishlisted: 2,
+    avatar: 'https://randomuser.me/api/portraits/men/10.jpg',
+    isFollowing: false,
+  },
+  {
+    name: 'Richard Hendricks',
+    username: '@Richard_Hendricks',
+    location: 'New York, NY',
+    whishlisted: 2,
+    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    isFollowing: true,
+  },
+  {
     name: 'Alexa James',
     username: '@alexa_james',
     location: 'New York, NY',
@@ -34,15 +98,7 @@ const UserCard = ({ user, onToggleFollow }) => {
         <img src={user.avatar} alt={user.name} className="w-16 h-16 rounded-full mb-3" />
         <h2 className="font-semibold">{user.name}</h2>
         <p className="text-gray-500 text-sm mb-1">{user.username}</p>
-        <div className="text-sm mb-2">
-          <span className="mr-1">🌐 Dreamer</span>
-          <span className="mr-1">📘 Learner</span>
-          <span className="mr-1">⚡ Doer</span>
-        </div>
-        <p className="text-sm text-gray-600 mb-3">
-          Exploring life one step at a time. ✨ <br />
-          Staying curious. Creating with purpose.
-        </p>
+        
         <div className="flex items-center justify-center gap-3 text-sm text-gray-500 mb-4">
           <span>📍 {user.location}</span>
           <span>👥 {user.whishlisted} Wishlisted By</span>
@@ -50,7 +106,7 @@ const UserCard = ({ user, onToggleFollow }) => {
         <button
           onClick={onToggleFollow}
           className={`flex items-center justify-center px-4 py-2 rounded-md text-white text-sm font-medium 
-            ${user.isFollowing ? 'bg-purple-600 hover:bg-purple-700' : 'bg-[#D92C54] hover:bg-blue-700'}`}
+            ${user.isFollowing ? 'bg-[#1B3C53] ' : 'bg-[#1B3C53] '}`}
         >
           {user.isFollowing ? 'Following' : 'Follow'}
         </button>
@@ -69,7 +125,9 @@ const Discover = () => {
   };
 
   return (
-    <div className="px-4 py-8 max-w-7xl mx-auto">
+  <div className="flex -ml-18 mr-18  ">
+
+    <div className="px-8 py-8 max-w-7xl mx-auto bg-white">
       <h1 className="text-2xl font-bold mb-1">Discover People</h1>
       <p className="text-gray-600 mb-6">Connect with amazing people and grow your network</p>
 
@@ -90,6 +148,7 @@ const Discover = () => {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 };
