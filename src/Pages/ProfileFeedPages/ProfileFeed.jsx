@@ -1,5 +1,6 @@
 import { useState } from 'react';
 // import { MdHome, MdPeople, MdMessage, MdNotifications, MdSettings } from 'react-icons/md';
+import Sidebar from '../Sidebar/Sidebar';
 const posts = [
   {
     id: 1,
@@ -68,7 +69,7 @@ const ProfileHeader = () => (
     <div className="flex items-center space-x-4">
       <img
         src="https://randomuser.me/api/portraits/men/75.jpg"
-        className="w-20 h-20 rounded-full border-4 border-white -mt-16"
+        className="w-20 h-20 rounded-full border-4 border-white -mt-18"
         alt="avatar"
       />
       <div>
@@ -109,12 +110,12 @@ const Post = ({ post }) => (
 );
 
 const ProfileFeed = () => (
-  <div className="flex">
+  <div className="flex -ml-18 mr-18  ">
     {/* <Sidebar /> */}
-    <main className=" flex-1 p-4 bg-[#DDDEAB] min-h-screen">
+    <main className=" flex-1 p-16 bg-white min-h-screen">
       <div className="max-w-5xl mx-auto">
         <ProfileHeader />
-        <div className="mt-6">
+        <div className="mt-2">
           {posts.map((post) => (
             <Post key={post.id} post={post} />
           ))}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // import { MdHome, MdPeople, MdMessage, MdNotifications, MdSettings } from 'react-icons/md';
-import Story from './StoryBar';
+import Sidebar from '../Sidebar/Sidebar';
 const posts = [
   {
     id: 1,
@@ -38,26 +38,7 @@ const posts = [
   },
 ];
 
-// const Sidebar = () => (
-//   <div className="w-40 md:w-60 h-screen p-4  fixed">
-//     <div className="text-2xl font-bold text-[#1B3C53] mb-8">FindUP</div>
-//     <nav className="space-y-6 ">
-//       <NavItem icon={<MdHome />}  text="Feed" />
-//       <NavItem icon={<MdPeople />}  text="People" />
-//       <NavItem icon={<MdMessage />}  text="Messages" />
-//       <NavItem icon={<MdNotifications />}  text="Notifications" />
-//       <NavItem icon={<MdSettings />}  text="Profile" />
-//     </nav>
-//     <button className="mt-10 bg-[#DDDEAB] text-[#1B3C53] font-semibold  w-full rounded-md py-2 ">+ Create Post</button>
-//   </div>
-// );
 
-// const NavItem = ({ icon, text, active }) => (
-//   <div className={`flex items-center space-x-3 text-sm font-medium cursor-pointer p-2 rounded-md ${active ? 'bg-purple-100 text-purple-700' : 'text-gray-600 hover:bg-gray-100'}`}>
-//     <span className="text-xl">{icon}</span>
-//     <span className="hidden md:inline">{text}</span>
-//   </div>
-// );
 
 
 
@@ -80,12 +61,13 @@ const Post = ({ post }) => (
 );
 
 const PublicFeed = () => (
-  <div className="flex">
+  <div className="flex -ml-18 mr-18  ">
     {/* <Sidebar /> */}
-    <main className=" flex-1 p-4 bg-[#DDDEAB] min-h-screen">
-      <Story />
+    <main className=" flex-1 p-16 bg-white min-h-screen">
+
       <div className="max-w-5xl mx-auto">
-        <div className="mt-6">
+        
+        <div className="mt-2">
           {posts.map((post) => (
             <Post key={post.id} post={post} />
           ))}
