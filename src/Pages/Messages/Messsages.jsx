@@ -18,7 +18,9 @@ export default function ChatPage() {
 
   return (
     
-    <div className="h-screen flex flex-col bg-white -ml-18 mr-18">
+    // <div className="h-screen flex flex-col bg-white -ml-18 mr-18">
+  <div className="bg-white rounded-xl shadow-md p-6 mb-4">
+
       {/* Members List */}
       {!showChat && (
         <div className="p-4 space-y-4">
