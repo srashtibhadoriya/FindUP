@@ -106,7 +106,7 @@ const UserCard = ({ user, onToggleFollow }) => {
         <button
           onClick={onToggleFollow}
           className={`flex items-center justify-center px-4 py-2 rounded-md text-white text-sm font-medium 
-            ${user.isFollowing ? 'bg-[#1B3C53] ' : 'bg-[#1B3C53] '}`}
+            ${user.isFollowing ? 'bg-[#1B3C53] ' : 'bg-blue-400 '}`}
         >
           {user.isFollowing ? 'Following' : 'Follow'}
         </button>
